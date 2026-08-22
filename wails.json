@@ -1,0 +1,13 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "prueba_paginas",
+  "outputfilename": "prueba_paginas",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "gNOR-mu",
+    "email": "82237339+gNOR-mu@users.noreply.github.com"
+  }
+}
