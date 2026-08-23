@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "settings": "Ajustes"
+  },
+  "home": {
+    "title": "Información del sistema"
+  },
+  "settings": {
+    "title": "Ajustes del Sistema",
+    "language": "Idioma"
+  }
+}

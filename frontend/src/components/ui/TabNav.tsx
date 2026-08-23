@@ -1,14 +1,16 @@
 import { Box, Icon, Spacer, Tabs } from "@chakra-ui/react";
 import Settings from "@/pages/Settings";
-import { VscHome, VscSettings, VscSettingsGear } from "react-icons/vsc";
+import { VscHome, VscSettingsGear } from "react-icons/vsc";
 import Home from "@/pages/Home";
 import { Tooltip } from "./tooltip";
 import { IconType } from "react-icons";
+import { useTranslation } from "react-i18next";
 
 const TABS = {
     HOME: 'home',
     SETTINGS: 'settings'
 }
+
 /**
  * Propiedades para el componente NavIconButton.
  * @property value Identificador único del tab asociado a este botón.
@@ -54,13 +56,15 @@ function NavIconButton({ value, label, icon }: NavIconButtonProps) {
  * @returns Componente Tabs con las principales páginas de navegación.
  */
 export default function TabNav() {
+    const { t } = useTranslation();
+
     return (
         <Tabs.Root defaultValue={TABS.HOME} orientation="vertical" h="100vh" lazyMount variant="plain">
             {/* Barra lateral */}
             <Tabs.List p="2" gap="2" borderRight="1px solid" borderColor="whiteAlpha.100">
-                <NavIconButton value={TABS.HOME} label="Inicio" icon={VscHome} />
+                <NavIconButton value={TABS.HOME} label={t('nav.home')} icon={VscHome} />
                 <Spacer />
-                <NavIconButton value={TABS.SETTINGS} label="Ajustes" icon={VscSettingsGear} />
+                <NavIconButton value={TABS.SETTINGS} label={t('nav.settings')} icon={VscSettingsGear} />
 
             </Tabs.List>
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { Provider } from './components/ui/provider'
 import TabNav from './components/ui/TabNav'
+import './config/i18n'
 
 function RootComponent() {
     return (

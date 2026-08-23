@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Home",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "System Information"
+  },
+  "settings": {
+    "title": "System Settings",
+    "language": "Language"
+  }
+}
