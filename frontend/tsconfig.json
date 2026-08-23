@@ -17,7 +17,8 @@
     "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@wails/*": ["./wailsjs/*"]
     },
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -25,7 +26,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "wailsjs"
   ],
   "references": [
     {

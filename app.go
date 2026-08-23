@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"prueba_paginas/internal/sysinfo"
 )
 
 // App struct
@@ -18,4 +19,8 @@ func NewApp() *App {
 // so we can call the runtime methods
 func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
+}
+
+func (a *App) GetSystemInfo() sysinfo.SystemInfo {
+	return sysinfo.GetInfo()
 }

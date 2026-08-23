@@ -4,7 +4,14 @@
     "settings": "Settings"
   },
   "home": {
-    "title": "System Information"
+    "title": "System Information",
+    "general_info": "General Information",
+    "user_host": "User@Host",
+    "os": "Operating System",
+    "architecture": "Architecture",
+    "loading": "Loading...",
+    "processor_and_graphics": "Processor & Graphics",
+    "memory_and_storage": "Memory & Storage"
   },
   "settings": {
     "title": "System Settings",
