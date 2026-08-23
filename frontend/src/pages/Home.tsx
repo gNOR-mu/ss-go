@@ -1,11 +1,9 @@
 import { Box, Heading } from "@chakra-ui/react";
 
-function Settings() {
+export default function Home() {
     return (
         <Box p="6">
-            <Heading size="xl">AJUSTES</Heading>
+            <Heading size="xl">Información del sistema</Heading>
         </Box>
     )
 }
-
-export default Settings;
