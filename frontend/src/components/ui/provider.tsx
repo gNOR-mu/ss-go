@@ -8,7 +8,11 @@ import {
 
 
 const config = defineConfig({
-
+  globalCss: {
+    ":root": {
+      colorPalette: "gray"
+    }
+  },
   theme: {
     recipes: {
       button: {
@@ -32,22 +36,19 @@ const config = defineConfig({
       colors: {
         primary: {
           value: {
-            _light: "{colors.blue.50}",
-            _dark: "{colors.blue.900}",
+            _dark: "{colors.colorPalette.900}",
           },
         },
         secondary: {
           value: {
-            _light: "{colors.blue.200}",
-            _dark: "{colors.blue.800}",
+            _dark: "{colors.colorPalette.800}",
           },
         },
 
         bg: {
           DEFAULT: {
             value: {
-              _light: "{colors.blue.50}",
-              _dark: "{colors.blue.950}",
+              _dark: "{colors.colorPalette.950}",
             },
           },
         },

@@ -41,7 +41,7 @@ function NavIconButton({ value, label, icon }: NavIconButtonProps) {
                 borderRadius="xl"
                 transition="all 0.3s ease"
                 _selected={{
-                    bg: "blue.600",
+                    bg: "colorPalette.600",
                     color: "white",
                 }}
             >
