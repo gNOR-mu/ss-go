@@ -1,4 +1,4 @@
-module prueba_paginas
+module sys_info_app
 
 go 1.25.0
 

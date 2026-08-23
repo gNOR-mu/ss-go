@@ -1,8 +1,6 @@
 # README
 
-Proyecto sinsentido que estoy realizando para estudiar el funcionamiento de Go y Wails.
-
-Posiblemente se convierta en un monitor de estadísticas del sistema operativo.
+Monitor de estadísticas del sistema que estoy realizando para estudiar el funcionamiento de Go y Wails.
 
 ## Live Development
 

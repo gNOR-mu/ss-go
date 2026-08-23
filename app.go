@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"prueba_paginas/internal/sysinfo"
+	"sys_info_app/internal/sysinfo"
 )
 
 // App struct
