@@ -90,3 +90,21 @@ func GetInfo() SystemInfo {
 		Gpus:             gpus,
 	}
 }
+
+func GetCpuUsage() float64 {
+	percentages, err := cpu.Percent(0, false)
+	if err == nil && len(percentages) > 0 {
+		return percentages[0]
+	}
+	return 0
+}
+
+func GetCpuCoresUsage() []float64 {
+	percentages, err := cpu.Percent(0, true)
+	if err == nil {
+		return percentages
+	}
+	return []float64{}
+}
+
+

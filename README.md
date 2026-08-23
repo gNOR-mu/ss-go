@@ -2,6 +2,14 @@
 
 Monitor de estadísticas del sistema que estoy realizando para estudiar el funcionamiento de Go y Wails.
 
+# Demo
+
+Probado en Windows
+
+![Info general](img/info_general.png)
+
+![Métricas](img/metrics.png)
+
 ## Live Development
 
 To run in live development mode, run `wails dev` in the project directory. This will run a Vite development

@@ -24,3 +24,13 @@ func (a *App) startup(ctx context.Context) {
 func (a *App) GetSystemInfo() sysinfo.SystemInfo {
 	return sysinfo.GetInfo()
 }
+
+func (a *App) GetCpuUsage() float64 {
+	return sysinfo.GetCpuUsage()
+}
+
+func (a *App) GetCpuCoresUsage() []float64 {
+	return sysinfo.GetCpuCoresUsage()
+}
+
+

@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Home",
-    "settings": "Settings"
+    "settings": "Settings",
+    "metrics": "Metrics"
   },
   "home": {
     "title": "System Information",
@@ -18,6 +19,17 @@
     "clock_speed": "Clock Speed",
     "cache": "Cache Memory",
     "gpu": "Graphics Card"
+  },
+  "metrics": {
+    "title": "Performance Metrics",
+    "cpu_total": "Total CPU Usage",
+    "threads_usage": "Usage per Core / Thread",
+    "thread": "Thread",
+    "interval": "Interval",
+    "range": "Time Range",
+    "view_mode": "View Mode",
+    "view_cpu": "Total CPU",
+    "view_threads": "Per Thread"
   },
   "settings": {
     "title": "System Settings",

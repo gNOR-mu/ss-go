@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Inicio",
-    "settings": "Ajustes"
+    "settings": "Ajustes",
+    "metrics": "Métricas"
   },
   "home": {
     "title": "Información del sistema",
@@ -18,6 +19,17 @@
     "clock_speed": "Frecuencia de Reloj",
     "cache": "Memoria Caché",
     "gpu": "Tarjeta Gráfica"
+  },
+  "metrics": {
+    "title": "Métricas de Rendimiento",
+    "cpu_total": "Uso Total de CPU",
+    "threads_usage": "Uso por Hilo / Núcleo",
+    "thread": "Hilo",
+    "interval": "Intervalo",
+    "range": "Rango visible",
+    "view_mode": "Modo de vista",
+    "view_cpu": "CPU Total",
+    "view_threads": "Por Hilo"
   },
   "settings": {
     "title": "Ajustes del Sistema",

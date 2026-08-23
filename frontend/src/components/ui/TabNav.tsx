@@ -1,6 +1,7 @@
 import { Box, Icon, Spacer, Tabs } from "@chakra-ui/react";
 import Settings from "@/pages/Settings";
-import { VscHome, VscSettingsGear } from "react-icons/vsc";
+import Metrics from "@/pages/Metrics";
+import { VscGraphLine, VscHome, VscSettingsGear } from "react-icons/vsc";
 import Home from "@/pages/Home";
 import { Tooltip } from "./tooltip";
 import { IconType } from "react-icons";
@@ -8,7 +9,8 @@ import { useTranslation } from "react-i18next";
 
 const TABS = {
     HOME: 'home',
-    SETTINGS: 'settings'
+    SETTINGS: 'settings',
+    METRICS: 'metrics'
 }
 
 /**
@@ -63,6 +65,7 @@ export default function TabNav() {
             {/* Barra lateral */}
             <Tabs.List p="2" gap="2" borderRight="1px solid" borderColor="whiteAlpha.100">
                 <NavIconButton value={TABS.HOME} label={t('nav.home')} icon={VscHome} />
+                <NavIconButton value={TABS.METRICS} label={t('nav.metrics')} icon={VscGraphLine} />
                 <Spacer />
                 <NavIconButton value={TABS.SETTINGS} label={t('nav.settings')} icon={VscSettingsGear} />
 
@@ -71,6 +74,7 @@ export default function TabNav() {
             {/* Contenido */}
             <Box flex="1">
                 <Tabs.Content value={TABS.HOME} h="100%"><Home /></Tabs.Content>
+                <Tabs.Content value={TABS.METRICS} h="100%"><Metrics /></Tabs.Content>
                 <Tabs.Content value={TABS.SETTINGS} h="100%"><Settings /></Tabs.Content>
             </Box>
         </Tabs.Root>
