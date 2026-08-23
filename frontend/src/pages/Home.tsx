@@ -1,8 +1,10 @@
+import InfoRow from "@/components/ui/InfoRow";
 import SectionItem from "@/components/ui/SectionItem";
-import { Accordion, Box, Heading, Text, VStack } from "@chakra-ui/react";
+import { Accordion, Box, Flex, Heading, HStack, Text, VStack } from "@chakra-ui/react";
 import { GetSystemInfo } from "@wails/go/main/App";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { VscRocket } from "react-icons/vsc";
 
 interface SystemInfo {
     user: string;
@@ -27,11 +29,11 @@ export default function Home() {
         <Box p="6">
             <Heading size="xl">{t('home.title')}</Heading>
             <Accordion.Root collapsible defaultValue={["general"]} my={3} variant="subtle">
-                <SectionItem value="general" title={t('home.general_info')}>
-                    <VStack align="start" gap="1">
-                        <Text><strong>{t('home.user_host')}:</strong> {info ? `${info.user}@${info.hostname}` : t('home.loading')}</Text>
-                        <Text><strong>{t('home.os')}:</strong> {info?.os || t('home.loading')}</Text>
-                        <Text><strong>{t('home.architecture')}:</strong> {info?.arch || t('home.loading')}</Text>
+                <SectionItem icon={VscRocket} value="general" title={t('home.general_info')}>
+                    <VStack align="stretch" w="100%">
+                        <InfoRow label={t('home.user_host')} value={info ? `${info.user}@${info.hostname}` : t('home.loading')} />
+                        <InfoRow label={t('home.os')} value={info?.os} />
+                        <InfoRow label={t('home.architecture')} value={info?.arch} />
                     </VStack>
                 </SectionItem>
                 {/* <SectionItem value="processor" title={t('home.processor_and_graphics')} /> */}
