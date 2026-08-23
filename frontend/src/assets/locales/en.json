@@ -11,7 +11,13 @@
     "architecture": "Architecture",
     "loading": "Loading...",
     "processor_and_graphics": "Processor & Graphics",
-    "memory_and_storage": "Memory & Storage"
+    "memory_and_storage": "Memory & Storage",
+    "processor": "Processor",
+    "vendor": "Vendor",
+    "cores": "Cores (Physical / Logical)",
+    "clock_speed": "Clock Speed",
+    "cache": "Cache Memory",
+    "gpu": "Graphics Card"
   },
   "settings": {
     "title": "System Settings",
